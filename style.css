@@ -1,0 +1,68 @@
+h1, h2 {
+  color:#FFF;
+  font-size:50px;
+  font-family: 'Lora', serif;
+  margin:0;
+  padding:10px;
+}
+h2 {
+  font-size: 30px;
+}
+body {
+  background-image: url('images/Curtis (14 of 18).jpg');
+  background-size:cover;
+  background-position: left center;
+}
+header {
+  padding:15px;
+  margin-top:0px;
+}
+.gradient {
+  background: linear-gradient(to bottom, rgba(200,0,0,.5),
+  rgba(0,0,0,0)), url(http://foo.com/image.jpg);
+}
+.title {
+  color:aqua;
+}
+.content {
+  display:flex;
+  min-height:100vh;
+  flex-direction:column;
+}
+a {
+  font-family: 'Lora', serif;
+  text-decoration:none;
+  color:#FFF;
+  padding:15px;
+  width:80px;
+  font-size:20px;
+  border-radius:10px;
+  justify-content:flex-end;
+}
+footer {
+  order:1;
+  text-align:center;
+  color:#FFF;
+  background-color:rgba(0,0,0,.5)
+}
+a:hover {
+  transition: .2s ease;
+  background-color: rgba(0,0,0,.5);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  flex-direction:column;
+}
+.main {
+  flex-grow:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
