@@ -85,7 +85,7 @@ hr {
 
   #page2 {
     display:flex;
-    height:100vh;
+    height: 100vh;
     flex-direction: column;
     background-color:#000;
     justify-content: center;
@@ -143,4 +143,13 @@ hr {
 
   .page2hr {
     width:90%
+  }
+
+  #page3 {
+    display:flex;
+    height:100vh;
+    flex-direction: column;
+    background-color:#000;
+    justify-content: center;
+    align-items: center;
   }
