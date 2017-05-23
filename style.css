@@ -2,12 +2,12 @@ body {
   color:#FFF;
   font-family: 'Lora', serif;
 }
-.content {
+#page1 {
   background-image: url('images/Curtis (14 of 18).jpg');
   background-size:cover;
   background-position: left center;
   display:flex;
-  min-height:100vh;
+  height:100vh;
   flex-direction:column;
 }
 header {
@@ -44,10 +44,9 @@ a {
 }
 
 footer {
-  order:1;
   text-align:center;
   color:#FFF;
-  background-color:rgba(0,0,0,.5);
+  /*background-color:rgba(0,0,0,.5);*/
   font-family: 'Lora', serif;
   font-size:25px;
   position:fixed;
@@ -80,22 +79,13 @@ hr {
     color:#FFF;
     font-size:30px;
   }
-  .brandstatement {
-    color:#FFF;
-    width:50%;
-    font-family: 'Lora', serif;
-    padding:30px;
-    background-color: rgba(0,0,0,.3);
-    font-size:24px;
-    line-height: 30px;
-    box-sizing: border-box;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+
+   /*Page 2 CSS*/
+
   #page2 {
     display:flex;
-    min-height:100vh;
+    height:100vh;
     flex-direction: column;
     background-color:#000;
     justify-content: center;
@@ -103,20 +93,54 @@ hr {
   }
   .arrows {
     width:5%;
+    margin:30px;
   }
   .arrowcontainer {
     text-align: center;
   }
+
   .page2main {
     display:flex;
     flex-grow:1;
+    background-color: #000;
+    /*padding:20px;*/
   }
-  .resume {
+  .brandstatementcontainer {
     width:50%;
-    box-sizing: border-box;
     display:flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:blue;
+    box-sizing: border-box;
+    padding:70px;
+    border-right:1px solid white;
+  }
+  .resumecontainer {
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .brandstatement {
+    color:#FFF;
+    font-family: 'Lora', serif;
+    background: rgba(150,0,30,.3);
+    font-size:24px;
+    line-height: 30px;
+    padding:20px;
+    border-radius:10px;
+  }
+  .resume {
+    color:#FFF;
+    font-family: 'Lora', serif;
+    background: rgba(150,0,30,.3);
+    font-size:24px;
+    line-height: 30px;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+  }
+
+  .page2hr {
+    width:90%
   }

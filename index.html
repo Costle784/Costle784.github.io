@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class='content'>
+  <div id='page1'>
     <header>
       <h1>Curtis Ostle</h1>
       <h2>Full-Stack Web Developer</h2>
@@ -25,13 +25,10 @@
       </div>
       <hr>
     </header>
-
-
-
-        <nav>
-          <a href='#' class='button' id='aboutme'>About me</a>
-          <a href='#' class='button' id='projects'>Projects</a>
-        </nav>
+    <nav>
+      <a href='#' class='button' id='aboutme'>About me</a>
+      <a href='#' class='button' id='projects'>Projects</a>
+    </nav>
 
 
     <footer>&copy Curtis Ostle 2017</footer>
@@ -41,25 +38,27 @@
     <div class='arrowcontainer'>
       <img id='uparrow' class='arrows' src='images/uparrow.png'>
     </div>
+    <hr class='page2hr'>
       <main class='page2main'>
-        <!-- <div class="brandstatementcontainer"> -->
+        <div class="brandstatementcontainer">
           <p class='brandstatement'>
             An intuitive and creative problem solver, I employ my extensive musical and technical training
             to inventive manipulations of computer-based languages and data. I’m a detail-oriented, fast-learner who thrives in
             collaborative environments using my adaptability and versatility to find sound solutions.
           </p>
-        <!-- </div>   -->
-        <div class='resume'>
-          <h2>Download Resume</h2>
-          <p><a href='#' class='fa fa-file-pdf-o'></a><p>
+        </div>
+        <div class='resumecontainer'>
+          <div class='resume'>
+            <h2>Download Resume</h2>
+            <p><a href='#' class='fa fa-file-pdf-o'></a><p>
+          </div>
         </div>
       </main>
-
-
+      <hr class='page2hr'>
     <div class='arrowcontainer'>
       <a><img id='downarrow' class='arrows' src='images/downarrow.png'></a>
     </div>
-  </div>
+    </div>
   <script src='./main.js'></script>
 </body>
 </html>
