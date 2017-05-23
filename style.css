@@ -1,88 +1,122 @@
-h1, h2 {
-  color:#FFF;
-  font-size:50px;
-  font-family: 'Lora', serif;
-  margin:0;
-  padding:10px;
-}
-h2 {
-  font-size: 30px;
-}
 body {
+  color:#FFF;
+  font-family: 'Lora', serif;
+}
+.content {
   background-image: url('images/Curtis (14 of 18).jpg');
   background-size:cover;
   background-position: left center;
-}
-header {
-  padding:15px;
-  margin-top:0px;
-}
-.gradient {
-  background: linear-gradient(to bottom, rgba(200,0,0,.5),
-  rgba(0,0,0,0)), url(http://foo.com/image.jpg);
-}
-.title {
-  color:aqua;
-}
-.content {
   display:flex;
   min-height:100vh;
   flex-direction:column;
 }
+header {
+  padding:20px;
+  background: linear-gradient(to bottom, rgba(150,0,30,.5),
+  rgba(0,0,0,0))
+}
+h1, h2 {
+  padding:10px;
+}
+h1 {
+  font-size:100px;
+  font-weight:800;
+}
+nav {
+  display:flex;
+  flex-grow: 1;
+  padding:15px;
+  justify-content:space-around;
+  align-items:flex-end;
+}
+h2 {
+  font-size: 30px;
+}
 a {
-  font-family: 'Lora', serif;
-  text-decoration:none;
   color:#FFF;
   padding:15px;
-  width:80px;
-  font-size:20px;
+  font-size:40px;
   border-radius:10px;
-  justify-content:flex-end;
+  font-weight:700;
 }
+.button {
+  margin-bottom:80px;
+}
+
 footer {
   order:1;
   text-align:center;
   color:#FFF;
-  background-color:rgba(0,0,0,.5)
+  background-color:rgba(0,0,0,.5);
+  font-family: 'Lora', serif;
+  font-size:25px;
+  position:fixed;
+  bottom:0px;
+  width:100%;
 }
+
 a:hover {
   transition: .2s ease;
   background-color: rgba(0,0,0,.5);
   -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 30px;
+  font-size: 35px;
+  width: 35px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 70%;
 }
-.main {
-  flex-grow:1;
-  display:flex;
-  flex-direction:column;
-}
-.socialmedia {
-  display:flex;
-}
-nav {
-  display:flex;
-  flex-direction:column;
-  align-content: flex-start;
-}
-  .navcontainer {
-    display:flex;
-    flex-direction:column-reverse;
-    flex-grow: 1;
-  }
-  hr {
+
+hr {
     color:#FFF;
     text-align:left;
-    width:30%;
-    margin:20px;
+    width:40%;
+    margin:10px;
   }
   .email {
     font-style:italic;
+    color:#FFF;
+    font-size:30px;
+  }
+  .brandstatement {
+    color:#FFF;
+    width:50%;
+    font-family: 'Lora', serif;
+    padding:30px;
+    background-color: rgba(0,0,0,.3);
+    font-size:24px;
+    line-height: 30px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #page2 {
+    display:flex;
+    min-height:100vh;
+    flex-direction: column;
+    background-color:#000;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrows {
+    width:5%;
+  }
+  .arrowcontainer {
+    text-align: center;
+  }
+  .page2main {
+    display:flex;
+    flex-grow:1;
+  }
+  .resume {
+    width:50%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:blue;
   }
