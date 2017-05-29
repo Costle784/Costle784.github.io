@@ -8,6 +8,7 @@ let projects = $('#projects');
 let uparrow1 = $('#uparrow1');
 let downarrow1 = $('#downarrow1');
 let uparrow2 = $('#uparrow2');
+
 let brandstatement= $('#brandstatement');
 
 aboutMe.on('click', () => {
