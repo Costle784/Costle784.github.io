@@ -16,51 +16,62 @@
   <div id='page1'>
     <header>
       <h1>Curtis Ostle</h1>
-      <h2>Full-Stack Web Developer</h2>
+      <h2>Web Developer</h2>
       <h2 class='email'>Curtisostle@gmail.com</h2>
       <div class='socialmedia'>
-        <a href="mailto:curtisostle@gmail.com" class="fa fa-envelope"></a>
-        <a href="https://github.com/Costle784" class="fa fa-github"></a>
-        <a href='https://www.linkedin.com/in/curtis-ostle-600255140/' class="fa fa-linkedin"></a>
+        <a href="mailto:curtisostle@gmail.com" class="fa fa-envelope tooltip">
+          <span class='tooltiptext'>Email</span>
+        </a>
+        <a href="https://github.com/Costle784" class="fa fa-github tooltip">
+          <span class='tooltiptext'>Github</span>
+        </a>
+        <a href='https://www.linkedin.com/in/curtis-ostle-600255140/' class="fa fa-linkedin tooltip">
+          <span class='tooltiptext'>LinkedIn</span>
+        </a>
+        <a href= '#' class='fa fa-file-pdf-o tooltip' download>
+          <span class='tooltiptext'>Resume</span>
+        </a>
       </div>
       <hr>
     </header>
+    <div class="brandstatementcontainer">
+      <p class='brandstatement' id='brandstatement'>
+        An intuitive and creative problem solver, I employ my extensive teaching, performing, and technical background to inventively manipulate computer-based languages and data. I’m a detail-oriented, fast learner who thrives in collaborative environments where intelligent solutions must be found.
+      </p>
+    </div>
     <nav>
-      <a class='grow' id='aboutme'>About me</a>
-      <a class='grow' id='projects'>Projects</a>
+
+
+      <div class='arrowcontainer'>
+        <div class='navtext'>Check out projects below!</div>
+          <img id='downarrow1' class='arrows nav downarrow' src='images/downarrow.png'>
+        </div>
     </nav>
     <footer>&copy Curtis Ostle 2017</footer>
   </div>
-
   <div id='page2'>
     <div class='arrowcontainer'>
-      <img id='uparrow1' class='arrows nav' src='images/uparrow.png'>
+      <img id='uparrow2' class='arrows nav uparrow' src='images/uparrow.png'>
     </div>
-    <hr class='page2hr'>
-      <main class='page2main'>
-        <div class="brandstatementcontainer">
-          <p class='brandstatement' id='brandstatement'>
-            An intuitive and creative problem solver, I employ my extensive musical and technical training to inventively manipulate computer-based languages and data. I’m a detail-oriented, fast learner who thrives in collaborative environments using my adaptability and versatility to find intelligent solutions.
-          </p>
-        </div>
-        <div class='resumecontainer'>
-          <div class='resume'>
-            <h2>Download Resume</h2>
-            <p><a href='./Curtis_Ostle_Resume.pdf' class='fa fa-file-pdf-o' download></a><p>
+    <div class='page2main'>
+      <div class='projectcontainer'>
+        <img class='projectphoto' src='images/moonbats.png' alt='Moonbats'>
+        <div class='projectdescription'>
+          <h2 class='projecttitle'>Moonbats!</h2>
+          <p>A full-stack app using React as a front-end framework with a Rails API. The user chooses an upcoming sports game and Moonbats predicts what team will win based the their win/loss ratio iterated against the moon phases on those dates.</p>
+          </div>
+        <div class='buttonbox'>
+          <div class='code'>
+            <p><a href='https://github.com/Costle784/moonbats' target='_blank' class='fa fa-code'></a><p>
+            <p class='description'>See code.</p>
+          </div>
+          <div class='launch'>
+            <a href='#' target='_blank' class='fa fa-rocket'></a>
+            <p class='description'>Launch App!</p>
           </div>
         </div>
-      </main>
-      <hr class='page2hr'>
-    <div class='arrowcontainer'>
-      <a><img id='downarrow1' class='arrows nav' src='images/downarrow.png'></a>
-    </div>
-  </div>
-  <div id='page3'>
-    <div class='arrowcontainer'>
-      <img id='uparrow2' class='arrowpage3 nav' src='images/uparrow.png'>
-    </div>
-    <div class='page3main'>
-      <div class=projectcontainer>
+      </div>
+      <div class='projectcontainer'>
         <img class='projectphoto' src='./images/Drumcircle.png'>
         <div class='projectdescription'>
           <h2 class='projecttitle'>Drum Circle</h2>
@@ -73,15 +84,15 @@
         <div class='buttonbox'>
           <div class='code'>
             <p><a href='https://github.com/Costle784/drum-circle' target='_blank' class='fa fa-code'></a><p>
-            <p>See code.</p>
+            <p class='description'>See code.</p>
           </div>
           <div class='launch'>
             <a href='https://drum--circle.herokuapp.com/' target='_blank' class='fa fa-rocket'></a>
-            <p>Launch App!</p>
+            <p class='description'>Launch App!</p>
           </div>
         </div>
       </div>
-      <div class=projectcontainer>
+      <div class='projectcontainer'>
         <img class = 'projectphoto' src='images/hangman1.png'>
         <div class='projectdescription'>
           <h2>Creepy Hangman</h2>
@@ -95,29 +106,15 @@
         <div class='buttonbox'>
           <div class='code'>
             <p><a href='https://github.com/Costle784/Project1-Hangman' target='_blank' class='fa fa-code'></a><p>
-            <p>See code.</p>
+            <p class='description'>See code.</p>
           </div>
           <div class='launch'>
             <a href='https://costle784.github.io/Project1-Hangman/' target='_blank' class='fa fa-rocket'></a>
-            <p>Launch App!</p>
+            <p class='description'>Launch App!</p>
           </div>
         </div>
       </div>
-      <div class=projectcontainer>
-        <img class='projectphoto' src='images/Dcanimaladoption.png' alt='DC animal adoption'>
-        <h2>DC Animal Adoption</h2>
-        <p class='projectdescription'>An animal adoption resource that lets you search different animal shelters to find that perfect animal. It also queries an external API using AJAX to generate a quiz determining if you’re qualified to keep the animal.</p>
-        <div class='buttonbox'>
-          <div class='code'>
-            <p><a href='https://github.com/Costle784/Animal-adoption' target='_blank' class='fa fa-code'></a><p>
-            <p>See code.</p>
-          </div>
-          <div class='launch'>
-            <a href='https://costle784.github.io/Animal-adoption/' target='_blank' class='fa fa-rocket'></a>
-            <p>Launch App!</p>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
   <script src='./main.js'></script>

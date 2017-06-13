@@ -11,18 +11,9 @@ let uparrow2 = $('#uparrow2');
 
 let brandstatement= $('#brandstatement');
 
-aboutMe.on('click', () => {
-	$.scrollTo(page2, 600)
-});
-projects.on('click', () => {
-	$.scrollTo(page3, 600)
-});
-uparrow1.on('click', () => {
-	$.scrollTo(page1, 600)
-});
 downarrow1.on('click', () => {
-	$.scrollTo(page3, 600)
+	$.scrollTo(page2, 400)
 });
 uparrow2.on('click', () => {
-	$.scrollTo(page2, 600)
+	$.scrollTo(page1, 400)
 });
