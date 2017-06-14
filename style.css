@@ -1,11 +1,13 @@
 body {
   color:#FFF;
   font-family: 'Open Sans', sans-serif;
-}
-#page1 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: url('images/Curtis (14 of 18).jpg');
   background-size:cover;
   background-position: left center;
+}
+#page1 {
   display:flex;
   height:100vh;
   flex-direction:column;
@@ -21,44 +23,38 @@ header {
 }
 ul {
   position:fixed;
-  width:20%;
   right:0;
+  padding:15px;
 }
 @media (max-width: 600px) {
   ul {
     position:relative;
     display:flex;
-    flex-direction: row;
-  }
-}
-@media (max-width:200px) {
-  ul {
     flex-direction:column;
   }
 }
+li {
+  padding:10px;
+  font-size:25px;
+  border-radius:10px;
+  font-weight:700;
+}
+li:hover {
+  transition: .2s ease;
+  transform: scale(1.1);
+}
 .active {
-  background:url(./images/marker.png) center left no-repeat;
-  margin-left:10px;
+  background: rgba(0,0,0,.5);
+  margin-left:18px;
 }
 
-li {
-  font-size:15px;
-  padding:10px;
-}
 h2 {
   padding:10px;
   font-style:italic;
+  font-size: 30px;
 }
-
-
-
-
 h1 {
   font-size:80px;
-}
-
-h2 {
-  font-size: 30px;
 }
 .socialmedia {
   display:flex;
@@ -97,18 +93,6 @@ h2 {
 
 a {
   color:#FFF;
-  padding:15px;
-  font-size:40px;
-  border-radius:10px;
-  font-weight:700;
-}
-a:hover, .nav:hover {
-  transition: .2s ease;
-  background-color: rgba(0,0,0,1);
-  transform: scale(1.1);
-}
-.button {
-  margin-bottom:80px;
 }
 .fa {
   padding: 20px;
@@ -118,43 +102,46 @@ a:hover, .nav:hover {
   text-decoration: none;
   border-radius: 70%;
 }
+.fa:hover {
+  transition: .2s ease;
+  background-color: rgba(0,0,0,.5);
+  transform: scale(1.1);
+}
 hr {
   color:#FFF;
   text-align:left;
   width:40%;
   margin:10px;
   }
-.email {
-  font-style:italic;
-  color:#FFF;
-  font-size:30px;
-}
-/*Page 2 CSS*/
-  #page2 {
-    display:flex;
-    height: 100vh;
-    flex-direction: column;
-    background-color:#000;
-    justify-content: center;
-    align-items: center;
-    color:#000;
-  }
-.brandstatementcontainer {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  padding:15px;
-  overflow:auto;
-  }
 .brandstatement {
   color:#FFF;
-  font-family: 'Lora', serif;
-  background: rgba(0,0,0,.3);
-  font-size:20px;
+  background: rgba(0,0,0,.8);
+  font-size:24px;
   line-height: 30px;
   padding:15px;
   border-radius: 10px;
-  }
+  width:40%;
+  margin:15px;
+  margin-top:35px;
+}
+/*Page 2 CSS*/
+#page2 {
+  display:flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#page3 {
+  display:flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color:#000;
+  justify-content: center;
+  align-items: center;
+  color:#000;
+}
+
+
 
 .page2main {
   flex-grow:1;
