@@ -1,6 +1,6 @@
 body {
   color:#FFF;
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 #page1 {
   background-image: url('images/Curtis (14 of 18).jpg');
@@ -14,22 +14,49 @@ header {
   padding:20px;
   background: linear-gradient(to bottom, rgba(150,0,30,.5),
   rgba(0,0,0,0));
-  flex-shrink: 0;
 }
-h1, h2 {
+.headertop {
+  display:flex;
+  flex-wrap:wrap;
+}
+ul {
+  position:fixed;
+  width:20%;
+  right:0;
+}
+@media (max-width: 600px) {
+  ul {
+    position:relative;
+    display:flex;
+    flex-direction: row;
+  }
+}
+@media (max-width:200px) {
+  ul {
+    flex-direction:column;
+  }
+}
+.active {
+  background:url(./images/marker.png) center left no-repeat;
+  margin-left:10px;
+}
+
+li {
+  font-size:15px;
   padding:10px;
 }
+h2 {
+  padding:10px;
+  font-style:italic;
+}
+
+
+
+
 h1 {
-  font-size:100px;
-  font-weight:800;
+  font-size:80px;
 }
-nav {
-  display:flex;
-  flex-grow: 1;
-  padding:15px;
-  justify-content:space-around;
-  align-items:flex-end;
-}
+
 h2 {
   font-size: 30px;
 }
@@ -59,12 +86,16 @@ h2 {
   bottom: 100%;
   left: 50%;
   margin-left: -5px;
+  content:" ";
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 
-a{
+a {
   color:#FFF;
   padding:15px;
   font-size:40px;
@@ -78,16 +109,6 @@ a:hover, .nav:hover {
 }
 .button {
   margin-bottom:80px;
-}
-footer {
-  text-align:center;
-  color:#FFF;
-  background-color:rgba(0,0,0,.5);
-  font-family: 'Lora', serif;
-  font-size:25px;
-  position:fixed;
-  bottom:0px;
-  width:100%;
 }
 .fa {
   padding: 20px;
@@ -118,21 +139,6 @@ hr {
     align-items: center;
     color:#000;
   }
-.arrows {
-  width:5%;
-  margin:10px;
-  border-radius: 10px;
-  background-color: rgba(0,0,0,.5);
-}
-.arrowcontainer {
-  text-align: center;
-}
-.uparrow {
-  background-color: rgba(255,255,255,.2);
-}
-.downarrow {
-  margin-bottom: 15px;
-}
 .brandstatementcontainer {
   display:flex;
   justify-content: center;
@@ -169,8 +175,6 @@ hr {
 }
 .projectdescription {
   width:50%;
-  text-align:center;
-  object-fit: contain;
   /*padding:20px;*/
 }
 .buttonbox {
@@ -184,9 +188,7 @@ hr {
 .code, .launch {
   padding:20px;
 }
-.navtext {
-  font-size:24px;
-}
+
 .description {
   padding:5px;
 }

@@ -4,7 +4,7 @@
   <title>Curtis Ostle</title>
   <meta charset="utf-8">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel='stylesheet' type='text/css' href='style.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,12 +15,18 @@
 <body>
   <div id='page1'>
     <header>
-      <h1>Curtis Ostle</h1>
+      <div class='headertop'>
+        <h1>Curtis Ostle</h1>
+        <ul>
+          <li class='active'><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Projects</a></li>
+        </ul>
+      </div>
       <h2>Web Developer</h2>
-      <h2 class='email'>Curtisostle@gmail.com</h2>
       <div class='socialmedia'>
         <a href="mailto:curtisostle@gmail.com" class="fa fa-envelope tooltip">
-          <span class='tooltiptext'>Email</span>
+          <span class='tooltiptext'>curtisostle@gmail.com</span>
         </a>
         <a href="https://github.com/Costle784" class="fa fa-github tooltip">
           <span class='tooltiptext'>Github</span>
@@ -28,7 +34,7 @@
         <a href='https://www.linkedin.com/in/curtis-ostle-600255140/' class="fa fa-linkedin tooltip">
           <span class='tooltiptext'>LinkedIn</span>
         </a>
-        <a href= '#' class='fa fa-file-pdf-o tooltip' download>
+        <a href='images/CurtisOstleResume.pdf' class='fa fa-file-pdf-o tooltip' download>
           <span class='tooltiptext'>Resume</span>
         </a>
       </div>
@@ -39,20 +45,10 @@
         An intuitive and creative problem solver, I employ my extensive teaching, performing, and technical background to inventively manipulate computer-based languages and data. I’m a detail-oriented, fast learner who thrives in collaborative environments where intelligent solutions must be found.
       </p>
     </div>
-    <nav>
 
-
-      <div class='arrowcontainer'>
-        <div class='navtext'>Check out projects below!</div>
-          <img id='downarrow1' class='arrows nav downarrow' src='images/downarrow.png'>
-        </div>
-    </nav>
-    <footer>&copy Curtis Ostle 2017</footer>
   </div>
-  <div id='page2'>
-    <div class='arrowcontainer'>
-      <img id='uparrow2' class='arrows nav uparrow' src='images/uparrow.png'>
-    </div>
+  <!-- <div id='page2'>
+
     <div class='page2main'>
       <div class='projectcontainer'>
         <img class='projectphoto' src='images/moonbats.png' alt='Moonbats'>
@@ -75,11 +71,7 @@
         <img class='projectphoto' src='./images/Drumcircle.png'>
         <div class='projectdescription'>
           <h2 class='projecttitle'>Drum Circle</h2>
-          <p>A blog style app created with Ruby on Rails that connects musicians who are looking for jam sessions.
-            One can join or create a new jam session or drum circle with many customizations within each.
-            Features include specificying and signing up for instruments at band creation. Commenting, creating, and joining,
-            allowed by users only. RESTful architecture used in 'full crud' of all posts and comments. fully responsive
-            flash alerts for errors and user feedback.</p>
+          <p>A blog-style app developed with Ruby on Rails that connects musicians who are looking for jam sessions. Features include creating, commenting, and joining jam sessions or drum circles, available to registered users only. </p>
         </div>
         <div class='buttonbox'>
           <div class='code'>
@@ -96,11 +88,7 @@
         <img class = 'projectphoto' src='images/hangman1.png'>
         <div class='projectdescription'>
           <h2>Creepy Hangman</h2>
-          <p>A browser game built as an exercise in DOM manipulation.
-            I used jQuery to target all the elements on the page so that
-            the user can navigate through the app based on their owb input through a series of popups.
-            Features include an optional random word generator and special ghoulish music.
-            Technologies used are HTML5/CSS3, Javascript, jQuery.
+          <p>A browser game built as an exercise in DOM manipulation using HTML/CSS3, Javascript, and jQuery. Features special ghoulish music.
            </p>
         </div>
         <div class='buttonbox'>
@@ -116,7 +104,8 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
+  <footer>&copy Curtis Ostle 2017</footer>
   <script src='./main.js'></script>
 </body>
 </html>
