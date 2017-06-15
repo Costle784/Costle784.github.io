@@ -14,7 +14,7 @@ body {
 }
 header {
   padding:20px;
-  background: linear-gradient(to bottom, rgba(150,0,30,.5),
+  background: linear-gradient(to bottom, rgba(0,0,0,.7),
   rgba(0,0,0,0));
 }
 .headertop {
@@ -44,8 +44,8 @@ li:hover {
   transform: scale(1.1);
 }
 .active {
-  background: rgba(0,0,0,.5);
-  margin-left:18px;
+  background: rgba(194,191,19,.5);
+  transform: scale(1.1);
 }
 
 h2 {
@@ -65,16 +65,16 @@ h1 {
 }
 .tooltip .tooltiptext {
   visibility: hidden;
-  background-color: black;
-  color: #fff;
+  background: rgba(194,191,19,.5);
+  color: #000;
   text-align: center;
-  border-radius: 6px;
   padding: 5px;
   position: absolute;
   z-index: 1;
   top: 125%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -40px;
+  font-size:24px;
 }
 
 .tooltip .tooltiptext::after {
@@ -104,7 +104,7 @@ a {
 }
 .fa:hover {
   transition: .2s ease;
-  background-color: rgba(0,0,0,.5);
+  background: rgba(194,191,19,.5);
   transform: scale(1.1);
 }
 hr {
@@ -115,11 +115,10 @@ hr {
   }
 .brandstatement {
   color:#FFF;
-  background: rgba(0,0,0,.8);
+  background: rgba(0,0,0,.7);
   font-size:24px;
   line-height: 30px;
   padding:15px;
-  border-radius: 10px;
   width:40%;
   margin:15px;
   margin-top:35px;
@@ -127,55 +126,68 @@ hr {
 /*Page 2 CSS*/
 #page2 {
   display:flex;
-  height: 100vh;
   flex-direction: column;
+}
+.page2main {
+  display:flex;
+  height:40%;
+  width:80%;
+  background-color: rgba(0,0,0,.7);
+  margin:15px;
+  padding:15px;
+}
+.headshot {
+  max-width:200px;
+  max-height:200px;
+  margin:15px;
+  border-radius:5px;
+}
+.aboutme {
+  margin:15px;
+  font-size:24px;
+  line-height: 30px;
 }
 
 #page3 {
   display:flex;
   height: 100vh;
   flex-direction: column;
-  background-color:#000;
-  justify-content: center;
-  align-items: center;
-  color:#000;
 }
-
-
-
-.page2main {
-  flex-grow:1;
+.projectheader {
+  font-size:60px;
+  padding:20px;
+}
+.projectcontainer1, .projectcontainer2, .projectcontainer3 {
+  background: rgba(0,0,0,.7);
+  margin:5px 15px 5px 15px;
+  padding:15px;
   display:flex;
-  flex-direction:column;
   align-items: center;
-  margin-bottom: 12px;
-}
-.projectcontainer {
   width:80%;
-  background-color:#d3d3d3;
-  margin:10px;
-  padding:8px;
-  display:flex;
-  border-radius:10px;
-  align-items: center;
-  justify-content: space-around;
 }
-.projectdescription {
-  width:50%;
-  /*padding:20px;*/
+.projectcontainer2 {
+  background: rgba(241,226,145,.7)
 }
+.projectcontainer3{
+  background: rgba(30,144,255,.7)
+}
+
+
 .buttonbox {
   display:flex;
 }
 .projectphoto {
-  width:200px;
-  height:250px;
-  object-fit: contain;
+  width:150px;
+  height:130px;
+  padding:15px;
 }
-.code, .launch {
-  padding:20px;
+.code, .launch, .description {
+  padding:15px;
 }
-
-.description {
-  padding:5px;
+footer {
+  padding:10px;
+  text-align:center;
+  background: rgba(0,0,0,.7);
+  width:180px;
+  margin:0 auto;
 }
