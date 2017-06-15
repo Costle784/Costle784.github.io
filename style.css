@@ -197,12 +197,14 @@ hr {
   min-width:750px;
 }
 .projectcontainer2 {
-  background: rgba(241,226,145,.7)
+  background: rgba(229,175,19,.7);
 }
 .projectcontainer3{
   background: rgba(30,144,255,.7)
 }
-
+.projecttitle {
+  text-decoration: underline;
+}
 
 .buttonbox {
   display:flex;
@@ -219,6 +221,7 @@ footer {
   padding:10px;
   text-align:center;
   background: rgba(255,0,0,.7);
-  width:180px;
-  margin:0 auto;
+  width:150px;
+  margin:10px auto 10px auto;
+  border-radius: 10px;
 }
