@@ -21,13 +21,13 @@ header {
   display:flex;
   flex-wrap:wrap;
 }
-ul {
+.main_nav {
   position:fixed;
   right:0;
   padding:15px;
 }
 @media (max-width: 600px) {
-  ul {
+  .main_nav {
     position:relative;
     display:flex;
     flex-direction:column;
@@ -75,6 +75,7 @@ h1 {
   left: 50%;
   margin-left: -40px;
   font-size:24px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .tooltip .tooltiptext::after {
@@ -104,7 +105,7 @@ a {
 }
 .fa:hover {
   transition: .2s ease;
-  background: rgba(194,191,19,.5);
+  background: rgba(194,191,19,.7);
   transform: scale(1.1);
 }
 hr {
@@ -127,25 +128,54 @@ hr {
 #page2 {
   display:flex;
   flex-direction: column;
+  height:100vh;
 }
 .page2main {
   display:flex;
   height:40%;
-  width:80%;
+  width:75%;
   background-color: rgba(0,0,0,.7);
   margin:15px;
-  padding:15px;
+  min-width:450px;
+  justify-content: space-around;
+  align-items: center;
 }
 .headshot {
-  max-width:200px;
-  max-height:200px;
-  margin:15px;
+  /*max-width:20%;*/
+  max-height: 75%;
+  margin:5px;
   border-radius:5px;
 }
 .aboutme {
-  margin:15px;
+  margin:5px;
   font-size:24px;
-  line-height: 30px;
+  line-height:25px;
+  width:70%;
+  overflow: auto;
+}
+.skillscontainer {
+  display:flex;
+  flex-direction: column;
+  background:rgba(0, 0, 0, 0.7);
+  min-width:200px;
+  padding:15px;
+  font-size:24px;
+  width:45%;
+  margin:15px;
+}
+.skillstitle {
+  text-align:center;
+  text-decoration: underline;
+}
+.nestedskillscontainer {
+  display:flex;
+  padding:15px;
+  margin:15px;
+  /*justify-content: center;*/
+  align-items: center;
+}
+.skills1, .skills2, .skills3 {
+  min-width:35%;
 }
 
 #page3 {
@@ -164,6 +194,7 @@ hr {
   display:flex;
   align-items: center;
   width:80%;
+  min-width:750px;
 }
 .projectcontainer2 {
   background: rgba(241,226,145,.7)
@@ -187,7 +218,7 @@ hr {
 footer {
   padding:10px;
   text-align:center;
-  background: rgba(0,0,0,.7);
+  background: rgba(255,0,0,.7);
   width:180px;
   margin:0 auto;
 }
