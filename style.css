@@ -132,34 +132,35 @@ hr {
 }
 .page2main {
   display:flex;
-  height:40%;
   width:75%;
   background-color: rgba(0,0,0,.7);
   margin:15px;
   min-width:450px;
   justify-content: space-around;
   align-items: center;
+  height: 50%;
 }
 .headshot {
   /*max-width:20%;*/
-  max-height: 75%;
+  width:20%;
   margin:5px;
   border-radius:5px;
 }
 .aboutme {
   margin:5px;
   font-size:24px;
-  line-height:25px;
+  line-height:30px;
   width:70%;
+  padding:5px;
 }
 .skillscontainer {
   display:flex;
   flex-direction: column;
   background:rgba(0, 0, 0, 0.7);
-  min-width:200px;
-  padding:15px;
+  padding:10px;
   font-size:24px;
   width:45%;
+  max-height:40%;
   margin:15px;
 }
 .skillstitle {
@@ -168,13 +169,13 @@ hr {
 }
 .nestedskillscontainer {
   display:flex;
-  padding:15px;
-  margin:15px;
-  /*justify-content: center;*/
+  padding:10px;
+  margin:10px;
+  justify-content: center;
   align-items: center;
 }
 .skills1, .skills2, .skills3 {
-  min-width:35%;
+  /*min-width:35%;*/
 }
 
 #page3 {
