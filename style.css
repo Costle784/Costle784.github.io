@@ -7,9 +7,8 @@ body {
   background-size:cover;
   background-position: left center;
 }
-#page1 {
+#page1container {
   display:flex;
-  height:100vh;
   flex-direction:column;
 }
 header {
@@ -17,10 +16,7 @@ header {
   background: linear-gradient(to bottom, rgba(0,0,0,.7),
   rgba(0,0,0,0));
 }
-.headertop {
-  display:flex;
-  flex-wrap:wrap;
-}
+
 .main_nav {
   position:fixed;
   right:0;
@@ -28,9 +24,7 @@ header {
 }
 @media (max-width: 600px) {
   .main_nav {
-    position:relative;
-    display:flex;
-    flex-direction:column;
+    visibility: hidden;
   }
 }
 li {
@@ -54,6 +48,7 @@ h2 {
   font-size: 30px;
 }
 h1 {
+  white-space: nowrap;
   font-size:80px;
 }
 .socialmedia {
@@ -120,9 +115,9 @@ hr {
   font-size:24px;
   line-height: 30px;
   padding:15px;
-  width:30%;
   margin:15px;
   margin-top:35px;
+
 }
 /*Page 2 CSS*/
 #page2 {
@@ -135,10 +130,9 @@ hr {
   width:75%;
   background-color: rgba(0,0,0,.7);
   margin:15px;
-  min-width:450px;
+
   justify-content: space-around;
   align-items: center;
-  height: 50%;
 }
 .headshot {
   /*max-width:20%;*/
@@ -150,7 +144,7 @@ hr {
   margin:5px;
   font-size:24px;
   line-height:30px;
-  width:70%;
+  max-width:70%;
   padding:5px;
 }
 .skillscontainer {
