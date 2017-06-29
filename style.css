@@ -8,8 +8,7 @@ body {
   background-position: left center;
 }
 #page1container {
-  display:flex;
-  flex-direction:column;
+
 }
 header {
   padding:20px;
@@ -17,14 +16,29 @@ header {
   rgba(0,0,0,0));
 }
 
-.main_nav {
+/*.main_nav {
   position:fixed;
   right:0;
   padding:15px;
+}*/
+
+.brandstatement {
+  color:#FFF;
+  background: rgba(0,0,0,.7);
+  font-size:24px;
+  line-height: 30px;
+  padding:15px;
+  margin:15px;
+  margin-top:35px;
+  width:40%;
+
 }
 @media (max-width: 600px) {
   .main_nav {
     visibility: hidden;
+  }
+  .brandstatement {
+    width:80%;
   }
 }
 li {
@@ -108,16 +122,7 @@ hr {
   width:40%;
   margin:10px;
   }
-.brandstatement {
-  color:#FFF;
-  background: rgba(0,0,0,.7);
-  font-size:24px;
-  line-height: 30px;
-  padding:15px;
-  margin:15px;
-  margin-top:35px;
 
-}
 /*Page 2 CSS*/
 #page2 {
   display:flex;
