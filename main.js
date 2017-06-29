@@ -1,7 +1,7 @@
 //pages
-let page1 = $('#page1')
-let page2 = $('#page2');
-let page3 = $('#page3')
+let page1 = $('#page1container')
+let page2 = $('#page2container');
+let page3 = $('#page3container')
 //navigation
 let home = $('#home')
 let about = $('#about');

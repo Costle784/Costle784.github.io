@@ -13,14 +13,14 @@
 </head>
 <body>
   <div id='page1container'>
+    <ul class='main_nav'>
+      <li class='active'><a id='home'>Home<a></li>
+      <li><a id='about'>About</a></li>
+      <li><a id='projects'>Projects</a></li>
+    </ul>
     <header>
       <h1>Curtis Ostle</h1>
       <h2>Web Developer</h2>
-        <!-- <ul class='main_nav'>
-          <li class='active'><a id='home'>Home<a></li>
-          <li><a id='about'>About</a></li>
-          <li><a id='projects'>Projects</a></li>
-        </ul> -->
       <div class='socialmedia'>
         <a href="mailto:curtisostle@gmail.com" class="fa fa-envelope tooltip">
           <span class='tooltiptext'>curtisostle@gmail.com</span>
@@ -37,19 +37,20 @@
       </div>
       <hr>
     </header>
-    <p class='brandstatement' id='brandstatement'>
+
+    <p class='page1text' id='brandstatement'>
       I'm a detail-oriented, fast learner who thrives in collaborative environments and finds inventive solutions. With my extensive teaching, performing, and technical background, I'm an intuitive, creative problem solver.
     </p>
   </div>
 
-  <!-- <div id='page2'> -->
-    <!-- <div class='page2main'>
-      <p class='aboutme'>I’ve been a professional jazz bassist, educator, and composer over the past 10 years—performing, teaching, and recording in NYC and Shanghai as well as touring across Europe. Having always had an affinity for technology, I discovered a passion for coding last year and have been training since.
+  <div id='page2container'>
+    <h2 class='about'>About</h2>
+    <p class='page2text'>I’ve been a professional jazz bassist, educator, and composer over the past 10 years—performing, teaching, and recording in NYC and Shanghai as well as touring across Europe. Having always had an affinity for technology, I discovered a passion for coding last year and have been training since.
         <br>
         <br>
         With a thorough understanding of what it takes to acquire musical skills at the highest level, I've naturally taken to the tech world and am highly motivated to learn, persevere, and succeed.</p>
-      <img class='headshot' src='./images/curtis_headshot.jpg'>
-    </div>
+    <img class='headshot' src='./images/curtis_headshot.jpg'>
+
     <div class='skillscontainer'>
       <p class='skillstitle'>Skills</p>
         <div class='nestedskillscontainer'>
@@ -72,11 +73,12 @@
             <li>Postgresql</li>
           </ul>
         </div>
-    </div>
+      </div>
+
   </div>
 
-  <div id='page3'>
-    <h1 class='projectheader'>Projects</h1>
+  <div id='page3container'>
+    <h2 class='projectheader'>Projects</h2>
     <div class='projectcontainer1'>
       <img class='projectphoto' src='images/moonbats.png' alt='Moonbats'>
       <div class='projectdescription'>
@@ -136,7 +138,7 @@
       </div>
     </div>
     <footer>&copy Curtis Ostle 2017</footer>
-  </div> -->
+  </div>
   <script src='./main.js'></script>
 </body>
 </html>
