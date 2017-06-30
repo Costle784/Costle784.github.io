@@ -24,9 +24,9 @@ header {
 
 .main_nav {
   position:fixed;
-  top:0;
   padding:15px;
-  transition:1s;
+  display:flex;
+  right:0;
 }
 
 .page1text, .page2text{
@@ -87,7 +87,11 @@ li:hover {
 }
 
 h1 {
-  font-size:80px;
+  font-size:6em;
+  color:rgb(231,44,12);
+  background:rgba(0, 0, 0, 0.7);
+  padding:10px;
+  display:inline-block;
 }
 .socialmedia {
   display:flex;
