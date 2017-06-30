@@ -31,12 +31,10 @@ header {
   padding:15px;
   margin:15px;
   margin-top:35px;
-  width:40%;
+  width:45%;
+  box-sizing: border-box;
 }
-.page2text {
-  width:60%;
-  margin-top:10px;
-}
+
 
 
 
@@ -46,28 +44,44 @@ h2 {
   font-size: 30px;
   text-decoration:underline;
 }
-.about {
-  padding-left:30px;
-  font-style:italic;
-  font-size: 30px;
-  width:100%;
-  order:0;
+
+.page2text {
+  width:60%;
+  margin-top:10px;
+  order:1;
 }
+
+.headshot {
+  border-radius:5px;
+  padding:15px;
+  height:30%;
+  order:2;
+}
+
+
+
+
 
 @media (max-width: 700px) {
   .main_nav {
     visibility: hidden;
-
   }
   .page1text {
-    width:80%;
+    width:90%;
+  }
+  .page2text {
+    width:90%;
   }
   #page1container {
     height:auto;
   }
-  #page2 {
-    height:auto;
+  .headshot{
+    order:1;
   }
+  .page2text {
+    order:2;
+  }
+
 
 }
 
@@ -156,28 +170,26 @@ hr {
   flex-wrap:wrap;
   height:100vh;
 }
-.headshot {
-  /*max-width:20%;*/
-  max-height:250px;
-  border-radius:5px;
-  order:1;
+
+.abouttitle {
+  padding-left:30px;
+  font-style:italic;
+  font-size: 30px;
+  width:100%;
+  order:0;
 }
-.aboutme {
-  margin:5px;
-  font-size:24px;
-  line-height:30px;
-  max-width:70%;
-  padding:5px;
-}
+
+
+
 .skillscontainer {
   display:flex;
   flex-direction: column;
   background:rgba(0, 0, 0, 0.7);
   padding:10px;
   font-size:24px;
-  width:45%;
-  max-height:40%;
   margin:15px;
+  order:3;
+
 }
 .skillstitle {
   text-align:center;
@@ -189,20 +201,18 @@ hr {
   margin:10px;
   justify-content: center;
   align-items: center;
-}
-.skills1, .skills2, .skills3 {
-  /*min-width:35%;*/
+  flex-wrap:wrap;
 }
 
 #page3container {
   display:flex;
   height: 100vh;
-  flex-direction: column;
+  flex-wrap:wrap;
 }
-.projectheader {
-  font-size:60px;
-  padding:20px;
+.projecttitle {
+  width:100%;
 }
+
 .projectcontainer1, .projectcontainer2, .projectcontainer3 {
   margin:5px 15px 5px 15px;
   padding:15px;
@@ -245,3 +255,6 @@ footer {
   margin:10px auto 10px auto;
   border-radius: 10px;
 }
+ .skill {
+   font-size:20px;
+ }
