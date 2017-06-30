@@ -10,6 +10,11 @@ body {
 #page1container {
   height:100vh;
 }
+#page2container {
+  display:flex;
+  flex-wrap:wrap;
+}
+
 header {
   padding:20px;
   background: linear-gradient(to bottom, rgba(0,0,0,.7),
@@ -45,6 +50,10 @@ h2 {
   text-decoration:underline;
 }
 
+.subtitle {
+  text-decoration:none;
+}
+
 .page2text {
   width:60%;
   margin-top:10px;
@@ -54,36 +63,10 @@ h2 {
 .headshot {
   border-radius:5px;
   padding:15px;
-  height:30%;
+  max-height:230px;
   order:2;
 }
 
-
-
-
-
-@media (max-width: 700px) {
-  .main_nav {
-    visibility: hidden;
-  }
-  .page1text {
-    width:90%;
-  }
-  .page2text {
-    width:90%;
-  }
-  #page1container {
-    height:auto;
-  }
-  .headshot{
-    order:1;
-  }
-  .page2text {
-    order:2;
-  }
-
-
-}
 
 
 
@@ -164,37 +147,35 @@ hr {
   margin:10px;
   }
 
-/*Page 2 CSS*/
-#page2container {
-  display:flex;
-  flex-wrap:wrap;
-  height:100vh;
-}
 
-.abouttitle {
-  padding-left:30px;
-  font-style:italic;
-  font-size: 30px;
+
+.abouttitle, .projecttitle {
+  padding-left:15px;
   width:100%;
+  box-sizing: border-box;
+}
+.abouttitle {
   order:0;
+}
+.projecttitle {
+  text-align: center;
 }
 
 
 
 .skillscontainer {
-  display:flex;
-  flex-direction: column;
   background:rgba(0, 0, 0, 0.7);
   padding:10px;
   font-size:24px;
   margin:15px;
   order:3;
-
 }
+
 .skillstitle {
   text-align:center;
   text-decoration: underline;
 }
+
 .nestedskillscontainer {
   display:flex;
   padding:10px;
@@ -203,23 +184,18 @@ hr {
   align-items: center;
   flex-wrap:wrap;
 }
-
-#page3container {
-  display:flex;
-  height: 100vh;
-  flex-wrap:wrap;
-}
-.projecttitle {
-  width:100%;
+.skill {
+  font-size:20px;
 }
 
 .projectcontainer1, .projectcontainer2, .projectcontainer3 {
-  margin:5px 15px 5px 15px;
   padding:15px;
   display:flex;
   align-items: center;
-  width:80%;
-  min-width:750px;
+  width:90%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin:25px auto 25px auto;
 }
 .projectcontainer1 {
   background: rgba(199,0,23,.7)
@@ -230,9 +206,7 @@ hr {
 .projectcontainer3{
   background: rgba(30,144,255,.7)
 }
-.projecttitle {
-  text-decoration: underline;
-}
+
 .projectblurb {
   line-height: normal;
 }
@@ -240,9 +214,11 @@ hr {
   display:flex;
 }
 .projectphoto {
-  width:150px;
-  height:130px;
-  padding:15px;
+  width:20%;
+  padding-right:15px;
+}
+.projectdescription {
+  width:45%;
 }
 .code, .launch, .description {
   padding:15px;
@@ -255,6 +231,57 @@ footer {
   margin:10px auto 10px auto;
   border-radius: 10px;
 }
- .skill {
-   font-size:20px;
- }
+
+@media (max-width: 975px) {
+    .projectcontainer1, .projectcontainer2, .projectcontainer3 {
+      justify-content: center;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .main_nav {
+    visibility: hidden;
+  }
+  .page1text {
+    width:90%;
+  }
+  .page2text {
+    width:90%;
+  }
+  #page1container {
+    height:auto;
+  }
+  .headshot{
+    order:1;
+  }
+  .page2text {
+    order:2;
+  }
+  .projectphoto {
+    width:40%;
+    padding-right:40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .projectdescription {
+    width:90%;
+  }
+  .projectphoto {
+    width:75%;
+    order:1;
+    padding-top:10px;
+  }
+  .projecttitle {
+    order:0;
+  }
+  .buttonbox {
+    order:2
+  }
+  .projectcontainer1, .projectcontainer2, .projectcontainer3 {
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+  }
+}
