@@ -20,13 +20,11 @@ body {
 
 header {
   padding:20px;
-  background: linear-gradient(to bottom, rgba(0,0,0,.7),
-  rgba(0,0,0,0));
 }
 
 .main_nav {
   position:fixed;
-  right:0;
+  top:0;
   padding:15px;
   transition:1s;
 }
