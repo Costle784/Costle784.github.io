@@ -20,10 +20,10 @@ body {
 }
 
 header {
-  padding:20px;
+  /*padding:20px;*/
   color:#FFF;
   display:inline-block;
-  background: rgba(0,0,0,.7);
+  /*background: rgba(0,0,0,.7);*/
   box-sizing: border-box;
   margin:15px;
 }
@@ -59,7 +59,7 @@ h2 {
 
 .page1text, .page2text{
   color:#FFF;
-  background: rgba(0,0,0,.7);
+  background:rgba(66,107,0,.7);
   font-size:24px;
   line-height: 30px;
   padding:15px;
@@ -120,7 +120,7 @@ li {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  top: 125%;
+  top: 100%;
   left: 50%;
   margin-left: -40px;
   font-size:24px;
@@ -131,7 +131,6 @@ li {
   bottom: 100%;
   left: 50%;
   margin-left: -5px;
-  content:" ";
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent black transparent;
@@ -180,7 +179,7 @@ hr {
 
 
 .skillscontainer {
-  background:rgba(0, 0, 0, 0.7);
+  background:rgba(66,107,0,.7);
   padding:10px;
   font-size:24px;
   margin:15px;
