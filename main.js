@@ -7,7 +7,6 @@ let home = $('#home')
 let about = $('#about');
 let projects = $('#projects');
 let header = $('#header')
-let nav = $('#mainnav')
 
 about.on('click', (e) => {
 	$.scrollTo(page2, 200);
