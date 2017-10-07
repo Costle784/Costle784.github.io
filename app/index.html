@@ -12,7 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 </head>
-<body>
+<body class='container'>
   <div id='page1container'>
     <ul class='main_nav'>
       <li class='navoption active'><a id='home'>Home<a></li>
@@ -21,33 +21,37 @@
     </ul>
     <header>
       <h1>Curtis Ostle</h1>
-      <h2 class='subtitle'>Web Developer</h2>
+      <h2 class='subtitle'>Web Developer | Educator | Bass Player</h2>
       <div class='socialmedia'>
-        <a href="mailto:curtisostle@gmail.com" class="fa fa-envelope tooltip">
-          <span class='tooltiptext'>curtisostle@gmail.com</span>
+        <a href="mailto:curtisostle@gmail.com" class="fa fa-envelope contact-info">
+          <span class='contact-info-text'>curtisostle@gmail.com</span>
         </a>
-        <a href="https://github.com/Costle784" target='_blank' class="fa fa-github tooltip">
-          <span class='tooltiptext'>Github</span>
+        <a href="https://github.com/Costle784" target='_blank' class="fa fa-github contact-info">
+          <span class='contact-info-text'>Github</span>
         </a>
-        <a href='https://www.linkedin.com/in/curtis-ostle-600255140/' target='_blank' class="fa fa-linkedin tooltip">
-          <span class='tooltiptext'>LinkedIn</span>
+        <a href='https://www.linkedin.com/in/curtis-ostle-600255140/' target='_blank' class="fa fa-linkedin contact-info">
+          <span class='contact-info-text'>LinkedIn</span>
         </a>
-        <a href='./images/Curtis Ostle Resume.pdf' class='fa fa-file-pdf-o tooltip' target='_blank'>
-          <span class='tooltiptext'>Resume</span>
+        <a href='./images/Curtis Ostle Resume.pdf' class='fa fa-file-pdf-o contact-info' target='_blank'>
+          <span class='contact-info-text'>Resume</span>
         </a>
       </div>
-      <!-- <hr> -->
     </header>
 
     <p class='page1text' id='brandstatement'>
-      I leverage my extensive teaching, performing, and technical background to find intuitive, creative solutions and to
-effectively communicate complex concepts.
+      I leverage my extensive teaching and technical background to find intuitive, creative solutions, to effectively communicate complex concepts, and to write clean, DRY code.
     </p>
   </div>
 
    <div id='page2container'>
     <h2 class='abouttitle'>About</h2>
-    <p class='page2text'>I’ve been a professional jazz bassist, educator, and composer over the past 10 years—performing, teaching, and recording in NYC and Shanghai as well as touring across Europe. Having obtained a master’s degree from one of the most prestigious and rigorous musical institutions in the world, I am able to process and apply new skills and concepts quickly, which has been invaluable in my training as a web developer. I am extremely self-motivated and have an insatiable desire to learn new technologies.
+    <p class='page2text'>I love web development (as well as music, good food, DC sports, talk radio, rocket league, my family, my cat, They Live (the movie), and other glorious things...).
+      <br />
+      <br />
+    As a highly motivated, fast learner, I'm always striving to improve at all phases of the software development lifecycle. Mastering a computer language is similar to learning musical language (or any language). Imitate. Assimilate. Innovate. One must first learn the rules in order to break them.
+    <br />
+    <br />
+    Thanks for stopping by, and please check out the apps I've built below!
     </p>
     <img class='headshot' src='./images/curtis_headshot.jpg'>
     <div class='skillscontainer'>
@@ -57,20 +61,22 @@ effectively communicate complex concepts.
             <li class='skill'>-Javascript</li>
             <li class='skill'>-jQuery</li>
             <li class='skill'>-HTML5/CSS3</li>
-            <li class='skill'>-Git/Github</li>
+            <li class='skill'>-React</li>
+            <li class='skill'>-Angular 1.x</li>
           </ul>
           <ul class='skills2'>
-            <li class='skill'>-Responsive Design</li>
-            <li class='skill'>-MongoDB</li>
-            <li class='skill'>-ExpressJS</li>
-            <li class='skill'>-AngularJS</li>
             <li class='skill'>-Node.js</li>
+            <li class='skill'>-SASS</li>
+            <li class='skill'>-Responsive Design</li>
+            <li class='skill'>-SQL</li>
+            <li class='skill'>-Ruby on Rails</li>
           </ul>
           <ul class='skills3'>
-            <li class='skill'>-React</li>
-            <li class='skill'>-Sinatra</li>
-            <li class='skill'>-Ruby on Rails</li>
-            <li class='skill'>-SQL</li>
+            <li class='skill'>-Git/Github</li>
+            <li class='skill'>-AJAX</li>
+            <li class='skill'>-Agile Development</li>
+            <li class='skill'>-Express.js</li>
+            <li class='skill'>-Webpack</li>
           </ul>
         </div>
       </div>
@@ -83,7 +89,7 @@ effectively communicate complex concepts.
       <div class='projectdescription'>
         <h2 class='projecttitle'>Moonbats</h2>
         <p class='projectblurb'>
-          A full-stack app that projects baseball game winners based on the phases of the moon. Developed using React, Rails API, and Postgresql.
+          A full-stack app that projects baseball game winners based on the phases of the moon. Developed using React, Ruby on Rails, and PostgreSQL.
         </p>
       </div>
       <div class='buttonbox'>
@@ -134,7 +140,28 @@ effectively communicate complex concepts.
         </div>
       </div>
     </div>
-    <footer>&copy Curtis Ostle 2017</footer>
+    <footer>
+      <p>
+        Please get in touch!
+      </p>
+      <div class='socialmedia-footer'>
+        <a href="mailto:curtisostle@gmail.com" class="fa fa-envelope contact-info">
+          <span class='contact-info-text contact-info-text-footer'>curtisostle@gmail.com</span>
+        </a>
+        <a href="https://github.com/Costle784" target='_blank' class="fa fa-github contact-info">
+          <span class='contact-info-text contact-info-text-footer'>Github</span>
+        </a>
+        <a href='https://www.linkedin.com/in/curtis-ostle-600255140/' target='_blank' class="fa fa-linkedin contact-info">
+          <span class='contact-info-text contact-info-text-footer'>LinkedIn</span>
+        </a>
+        <a href='./images/Curtis Ostle Resume.pdf' class='fa fa-file-pdf-o contact-info' target='_blank'>
+          <span class='contact-info-text contact-info-text-footer'>Resume</span>
+        </a>
+      </div>
+      <div>
+        &copy Curtis Ostle 2017
+      </div>
+    </footer>
   </div>
   <script src='./main.js'></script>
 </body>
